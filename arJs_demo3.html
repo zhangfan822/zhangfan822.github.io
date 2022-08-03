@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <script src="js/aframe/aframe.min.js"></script>
+  <!--我们导入了没有 NFT 的 Ar.js 版本，不过支持标记和基于位置的AR-->
+  <script src="js/aframe/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="data/image-tracking/nft/trex/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
